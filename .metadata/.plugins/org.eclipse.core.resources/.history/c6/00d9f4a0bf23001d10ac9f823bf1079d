@@ -1,0 +1,20 @@
+package entities;
+
+public class Product {
+	public String productName;
+	public double productValue;
+	public int quantity;
+	
+	
+	public double TotalValueInStock() {
+		return (quantity*productValue);
+	}
+	
+	public void AddProducts(int x) {
+		quantity +=x;
+	}
+	
+	public void RemoveProducts(int x) {
+		quantity-=x;
+	}
+}

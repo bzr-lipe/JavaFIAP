@@ -1,0 +1,36 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int qtdNomes = sc.nextInt();
+		String [] nomes = new String [qtdNomes];
+		int [][] tiro = new int [3][nomes.length];
+		Random generator = new Random();
+		
+		for(int i=0; i<nomes.length;i++) {
+			System.out.println("Digite o nome:");
+			for(int j=0; j<tiro.length;j++) {
+				for(int k=0; k<tiro[j].length;k++) {
+					System.out.print("Tiro " +(k+1) +":");
+					int dist = sc.nextInt();
+				}
+			}
+		}
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

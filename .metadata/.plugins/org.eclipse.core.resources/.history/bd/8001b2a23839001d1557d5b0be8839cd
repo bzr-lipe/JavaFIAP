@@ -1,0 +1,48 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Quantos Participantes?");
+		int qtdNomes = sc.nextInt();
+		String [] nomes = new String [qtdNomes];
+		int [][] tiro = new int [nomes.length][3];
+		
+		for(int i=0; i<nomes.length;i++) {
+			System.out.println("Competidor " +(i+1) +" ");
+			System.out.print("Digite o nome:");
+			nomes[i]=sc.nextLine();
+			for(int j=0; j<tiro.length;j++) {
+				for(int k=0; k<tiro[j].length;k++) {
+					System.out.print("Tiro " +(k+1) +":");
+					int dist = sc.nextInt();
+				}
+			}
+		}
+		
+		for(int i=0; i<nomes.length;i++) {
+			System.out.print(nomes[i] + " - ");
+			for(int j=0; j<tiro.length;j++) {
+				for(int k=0; k<tiro[j].length;k++) {
+					System.out.print("Tiro " +(k+1) +":");
+					int dist = sc.nextInt();
+				}
+			}
+		}
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}
