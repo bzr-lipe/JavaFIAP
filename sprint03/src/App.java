@@ -17,6 +17,13 @@ public class App {
 
 		for (int i = 0; i < nEquipes; i++) {
 			idEquipes[i] = generator.nextInt(10, 100);
+		}
+
+		for (int i = 0; i < nEquipes; i++) {
+			for (int j = i + 1; j < nEquipes; j++) {
+				while (idEquipes[i] == idEquipes[j]) {
+					idEquipes[j]=generator.nextInt();						   				}
+			}
 			System.out.println("Equipe " + idEquipes[i]);
 		}
 
@@ -85,13 +92,12 @@ public class App {
 		System.out.println();
 
 		for (int i = 0; i < nEquipes; i++) {
-			System.out
-					.println((i+1) +"º LUGAR --> Equipe " + idEquipes[i] + ": Pontos: " + totalPontos[i] + " - Nota Design: " + design[i]);
+			System.out.println((i + 1) + "º LUGAR --> Equipe " + idEquipes[i] + ": Pontos: " + totalPontos[i]
+					+ " - Nota Design: " + design[i]);
 		}
-		
+
 		String empateMensagem = "\nHOUVE UM EMPATE, A NOTA DE DESIGN SERÁ O CRITÉRIO DE DESEMPATE\n";
-		
-		
+
 		for (int i = 0; i < nEquipes; i++) {
 			for (int j = i + 1; j < nEquipes; j++) {
 				if (totalPontos[i] == totalPontos[j]) {
@@ -109,15 +115,16 @@ public class App {
 						design[j] = design[i];
 						design[i] = ordenaNota;
 					}
-					empateMensagem="";
+					empateMensagem = "";
 				}
-				
+
 			}
 		}
 
 		System.out.println();
 		for (int i = 0; i < nEquipes; i++) {
-			System.out.println((i+1) +"º LUGAR --> Equipe " + idEquipes[i] + ": Pontos: " + totalPontos[i] + " - Nota Design: " + design[i]);
+			System.out.println((i + 1) + "º LUGAR --> Equipe " + idEquipes[i] + ": Pontos: " + totalPontos[i]
+					+ " - Nota Design: " + design[i]);
 		}
 	}
 }
