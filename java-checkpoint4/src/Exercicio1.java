@@ -15,12 +15,17 @@ public class Exercicio1 {
 
 		System.out.println();
 
-		int decidir = 0;
+		int decidir;
 		int dzContador = 0;
 
-		System.out.println(
-				"Aperte 1 para usar quantidades geradas aleatóriamente\n\nAperte 2 para usar quantidades do PDF do CHECKPOINT");
-		decidir = sc.nextInt();
+		
+		
+		System.out.println("1)Usar quantidades geradas aleatóriamente\n2)Usar quantidades do PDF do CHECKPOINT");
+
+		do {
+			System.out.println("\nDigite sua opção: ");
+			decidir = sc.nextInt();
+		}while (decidir !=1 && decidir !=2);
 		
 
 		if (decidir == 1) {
@@ -150,6 +155,7 @@ public class Exercicio1 {
 			System.out.println();
 			System.out.print("                 ");
 
+			
 			System.out.print("Farinha (R$/kg)      ");
 			System.out.print("Acucar (R$/kg)      ");
 			System.out.print("Leite (R$/l)      ");
@@ -208,8 +214,3 @@ public class Exercicio1 {
 	}
 }
 
-/*---------------------------------------------------------------------------------------------------
-"Gerado de modo aleat�rio com intervalo entre 0, 10. (Caso Seja menor que 1) � arrendondado para 1"
-A exibi��o das quantiades viaria aleat�riamente, entre kg, litros e duzias.
-*Regra* D�zia s� pode se repetir 1 vez
--------------------------------------------------------------------------------------------------*/
