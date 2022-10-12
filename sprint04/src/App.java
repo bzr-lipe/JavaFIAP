@@ -28,19 +28,16 @@ public class App {
 			}
 
 		}
-		
+
 		for (int i = 0; i < nEquipes; i++) {
 			notaDesign[i] = generator.nextInt(10);
-			
+
 		}
-		
-		
-		
 
 		System.out.println("    Resultados: \n");
 
 		int nBatalha = 0;
-		
+
 		// coletar total
 		for (int i = 0; i < pontos.length; i++) {
 			for (int j = 0; j < pontos[i].length; j++) {
@@ -48,36 +45,61 @@ public class App {
 
 			}
 		}
-		
+
 		for (int i = 0; i < pontos[i].length; i++) {
-			for (int j = 0; j < (pontos.length-1)-i; j++) {
+			for (int j = 0; j < (pontos.length - 1) - i; j++) {
 				nBatalha++;
 				System.out.println("     Batalha " + nBatalha);
-				System.out.println("Equipe " + idEquipe[i] + " x " + "Equipe " + idEquipe[j+1]);
-				
-				if (pontos[i][j] == pontos[j+1][i]) {
+				System.out.println("Equipe " + idEquipe[i] + " x " + "Equipe " + idEquipe[j + 1]);
+
+				if (pontos[i][j] == pontos[j + 1][i]) {
 					System.out.println("-----------------------------------------------------------------------");
 					System.out.println("Houve um empate, nota de Design será usado como critério para desempate");
 					System.out.println("-----------------------------------------------------------------------");
-					System.out.println("Equipe " +idEquipe[i] +"= " +notaDesign[i]);
-					System.out.println("Equipe " +idEquipe[j+1] +"= " +notaDesign[j+1]);
+					System.out.println("Equipe " + idEquipe[i] + "= " + notaDesign[i]);
+					System.out.println("Equipe " + idEquipe[j + 1] + "= " + notaDesign[j + 1]);
 					System.out.println("--------------------------------");
-					if (notaDesign[i]<notaDesign[j+1]) {
-						System.out.println("Equipe " +idEquipe[i] +" venceu!");
-					} else{
-						System.out.println("Equipe " +idEquipe[i+1] +" venceu!");
+					if (notaDesign[i] < notaDesign[j + 1]) {
+						System.out.println("Equipe " + idEquipe[i] + " venceu!");
+					} else {
+						System.out.println("Equipe " + idEquipe[i + 1] + " venceu!");
 					}
 					System.out.println("--------------------------------");
-				}else {
-					System.out.println("       " +pontos[i][j] +" x " +pontos[j+1][i]);
+				} else {
+					System.out.println("       " + pontos[i][j] + " x " + pontos[j + 1][i]);
 					System.out.println();
 				}
-				
-				
-				
+
 			}
 		}
 
-	}
+		int aux1, aux2;
+		int[] top3 = new int[nEquipes];
 
+		for (int i = 0; i < top3.length; i++) {
+			System.out.println(idEquipe[i]);
+			System.out.println(totalPontos[i]);
+			System.out.println();
+		}
+
+		for (int i = 0; i < nEquipes; i++) {
+			int ordena = 0;
+			for (int j = 0; j < nEquipes; j++) {
+
+				for (int j2 = 0; j2 < top3.length; j2++) {
+					if (totalPontos[j] > top3[i] && totalPontos[j] != top3[j2]) {
+						aux1 = totalPontos[j];
+						top3[i] = aux1;
+					}
+
+				}
+				ordena++;
+			}
+
+		}
+		for (int i = 0; i < top3.length; i++) {
+			System.out.println(top3[i]);
+		}
+
+	}
 }
