@@ -12497,3 +12497,440 @@ java.lang.IllegalStateException
 	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
 	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 03:29:43.296
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 03:49:59.875
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 03:51:08.079
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 19:56:38.603
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 19:56:40.254
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 19:57:29.113
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:01:20.844
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:01:28.750
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:02:39.335
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:04:53.022
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:05:25.381
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:08:33.800
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:08:54.907
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:10:10.490
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:10:15.600
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:10:57.496
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:11:15.984
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:14:53.567
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 4 130 2022-10-12 20:16:32.336
+!MESSAGE Invalid stack frame
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getUnderlyingStackFrame(JDIStackFrame.java:1365)
+	at org.eclipse.jdt.internal.debug.core.model.JDILocalVariable.retrieveValue(JDILocalVariable.java:62)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getCurrentValue(JDIVariable.java:74)
+	at org.eclipse.jdt.internal.debug.core.model.JDIVariable.getValue(JDIVariable.java:98)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.computeLogicalStructureAdornmentFlags(JDIModelPresentation.java:1170)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getVariableImage(JDIModelPresentation.java:945)
+	at org.eclipse.jdt.internal.debug.ui.JDIModelPresentation.getImage(JDIModelPresentation.java:713)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getImage(LazyModelPresentation.java:129)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getImage(DelegatingModelPresentation.java:138)
+	at org.eclipse.debug.internal.ui.views.launch.DebugElementHelper.getImageDescriptor(DebugElementHelper.java:61)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getImageDescriptor(DebugElementLabelProvider.java:82)
+	at org.eclipse.debug.internal.ui.model.elements.VariableLabelProvider.getImageDescriptor(VariableLabelProvider.java:67)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.getImageDescriptor(ElementLabelProvider.java:274)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:201)
+	at org.eclipse.jdt.internal.debug.ui.variables.JavaVariableLabelProvider.retrieveLabel(JavaVariableLabelProvider.java:214)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:147)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

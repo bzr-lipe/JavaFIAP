@@ -45,61 +45,90 @@ public class App {
 
 			}
 		}
+		
+		
+		// mostrar batalhas= analise empate,
+		for (int i = 0; i < pontos.length; i++) {
+			for (int j = (i+1); j < pontos[i].length+1; j++) {
+				
+				if (idEquipe[i] != idEquipe[j]) {
+					nBatalha++;
+					
+					System.out.println("---------------------");
+					System.out.println("     Batalha " + nBatalha);
+					System.out.println("---------------------");
 
-		for (int i = 0; i < pontos[i].length; i++) {
-			for (int j = 0; j < (pontos.length - 1) - i; j++) {
-				nBatalha++;
-				System.out.println("     Batalha " + nBatalha);
-				System.out.println("Equipe " + idEquipe[i] + " x " + "Equipe " + idEquipe[j + 1]);
+					System.out.println(" Equipe " + idEquipe[i] + " x " + "Equipe " + idEquipe[j]);
+					System.out.println("        " + pontos[i][j-1] + " x " + pontos[j][i]);
+					
+					
+					if (pontos[i][j-1] == pontos[j][i]) {
+						System.out.println("****** EMPATE ********");
+						System.out.println("    Notas Design:");
+						System.out.println("    Equipe " + idEquipe[i] + " = " + notaDesign[i]);
+						System.out.println("    Equipe " + idEquipe[j] + " = " + notaDesign[j]);
 
-				if (pontos[i][j] == pontos[j + 1][i]) {
-					System.out.println("-----------------------------------------------------------------------");
-					System.out.println("Houve um empate, nota de Design será usado como critério para desempate");
-					System.out.println("-----------------------------------------------------------------------");
-					System.out.println("Equipe " + idEquipe[i] + "= " + notaDesign[i]);
-					System.out.println("Equipe " + idEquipe[j + 1] + "= " + notaDesign[j + 1]);
-					System.out.println("--------------------------------");
-					if (notaDesign[i] < notaDesign[j + 1]) {
-						System.out.println("Equipe " + idEquipe[i] + " venceu!");
+						System.out.println("---------------------");
+						if (notaDesign[i] > notaDesign[j]) {
+							System.out.println("  Equipe " + idEquipe[i] + " venceu!");
+						} else {
+							System.out.println("  Equipe " + idEquipe[j] + " venceu!");
+						}
 					} else {
-						System.out.println("Equipe " + idEquipe[i + 1] + " venceu!");
+						System.out.println("---------------------");
+						if (pontos[i][j-1] > pontos[j][i]) {
+							System.out.println("  Equipe " + idEquipe[i] + " venceu!");
+						} else {
+							System.out.println("  Equipe " + idEquipe[j] + " venceu!");
+						}
 					}
-					System.out.println("--------------------------------");
-				} else {
-					System.out.println("       " + pontos[i][j] + " x " + pontos[j + 1][i]);
-					System.out.println();
+					System.out.println("---------------------");
+					System.out.println("\n*****************************\n");
+					
 				}
-
 			}
 		}
+		
+		int aux1, aux2, aux3;
+		
+		for (int i = 0; i < nEquipes - 1; i++) {
+			for (int j = i + 1; j < nEquipes; j++) {
+				if (totalPontos[j] > totalPontos[i]) {
+					aux1 = totalPontos[j];
+					totalPontos[j] = totalPontos[i];
+					totalPontos[i] = aux1;
 
-		int aux1, aux2;
-		int[] top3 = new int[nEquipes];
+					aux2 = idEquipe[j];
+					idEquipe[j] = idEquipe[i];
+					idEquipe[i] = aux2;
 
-		for (int i = 0; i < top3.length; i++) {
-			System.out.println(idEquipe[i]);
-			System.out.println(totalPontos[i]);
-			System.out.println();
+					aux3 = notaDesign[j];
+					notaDesign[j] = notaDesign[i];
+					notaDesign[i] = aux3;
+				}
+			}
 		}
-
-		for (int i = 0; i < nEquipes; i++) {
-			int ordena = 0;
-			for (int j = 0; j < nEquipes; j++) {
-
-				for (int j2 = 0; j2 < top3.length; j2++) {
-					if (totalPontos[j] > top3[i] && totalPontos[j] != top3[j2]) {
+		
+		for (int i = 0; i < totalPontos.length; i++) {
+			for (int j = 0; j < totalPontos.length; j++) {
+				if(totalPontos[j]==totalPontos[i]) {
+					if(notaDesign[j]>notaDesign[i]) {
 						aux1 = totalPontos[j];
-						top3[i] = aux1;
+						totalPontos[j] = totalPontos[i];
+						totalPontos[i] = aux1;
+
+						aux2 = idEquipe[j];
+						idEquipe[j] = idEquipe[i];
+						idEquipe[i] = aux2;
+
+						aux3 = notaDesign[j];
+						notaDesign[j] = notaDesign[i];
+						notaDesign[i] = aux3;
 					}
-
 				}
-				ordena++;
 			}
-
+			
 		}
-		for (int i = 0; i < top3.length; i++) {
-			System.out.println(top3[i]);
-		}
-
+		
 	}
 }
