@@ -24,6 +24,7 @@ public class App {
 		int pontos[][] = new int[nEquipes][nEquipes - 1];
 		int notaDesign[] = new int[nEquipes];
 		int totalPontos[] = new int[nEquipes];
+		int totalPontosFase1[] = new int[nEquipes];
 		int vitorias[] = new int[nEquipes];
 		int derrotas[] = new int[nEquipes];
 		int empates[] = new int[nEquipes];
@@ -43,8 +44,8 @@ public class App {
 			notaDesign[i] = generator.nextInt(10);
 		}
 
-		System.out.println("    Resultados: \n");
-
+		
+	
 		int nBatalha = 0;
 
 		// coletar total
@@ -54,6 +55,8 @@ public class App {
 		System.out.println("2 --> Mostrar resumo das lutas");
 		int opcao = sc.nextInt();
 
+		System.out.println("    Resultados: \n"); 
+		
 		switch (opcao) {
 		case 1:
 			System.out.println();
@@ -80,12 +83,14 @@ public class App {
 							if (notaDesign[i] > notaDesign[j]) {
 								System.out.println("  Equipe " + idEquipe[i] + " venceu!");
 								totalPontos[i] += 3;
+								totalPontosFase1[i] += 3;
 								empates[i]++;
 								vEmpates[i]++;
 								derrotas[j]++;
 							} else {
 								System.out.println("  Equipe " + idEquipe[j] + " venceu!");
 								totalPontos[j] += 3;
+								totalPontosFase1[j] += 3;
 								derrotas[i]++;
 								empates[j]++;
 								vEmpates[j]++;
@@ -95,11 +100,13 @@ public class App {
 							if (pontos[i][j - 1] > pontos[j][i]) {
 								System.out.println("  Equipe " + idEquipe[i] + " venceu!");
 								totalPontos[i] += 5;
+								totalPontosFase1[i] += 5;
 								vitorias[i]++;
 								derrotas[j]++;
 							} else {
 								System.out.println("  Equipe " + idEquipe[j] + " venceu!");
 								totalPontos[j] += 5;
+								totalPontosFase1[j] += 5;
 								vitorias[j]++;
 								derrotas[i]++;
 							}
@@ -122,20 +129,24 @@ public class App {
 							empates[j]++;
 							if (notaDesign[i] > notaDesign[j]) {
 								totalPontos[i] += 3;
+								totalPontosFase1[i] += 3;
 								vEmpates[i]++;
 								derrotas[j]++;
 							} else {
 								totalPontos[j] += 3;
+								totalPontosFase1[j] += 3;
 								derrotas[i]++;
 								vEmpates[j]++;
 							}
 						} else {
 							if (pontos[i][j - 1] > pontos[j][i]) {
 								totalPontos[i] += 5;
+								totalPontosFase1[i] += 5;
 								vitorias[i]++;
 								derrotas[j]++;
 							} else {
 								totalPontos[j] += 5;
+								totalPontosFase1[j] += 5;
 								vitorias[j]++;
 								derrotas[i]++;
 							}
@@ -201,7 +212,6 @@ public class App {
 			}
 		}
 
-		System.out.println();
 		System.out.println("TOP 3:\n");
 
 		if (totalPontos[0] == totalPontos[1]) {
@@ -230,6 +240,8 @@ public class App {
 		System.out.println("1 --> Mostrar todas as Lutas");
 		System.out.println("2 --> Mostrar resumo das lutas");
 		opcao = sc.nextInt();
+		
+		System.out.println("    Resultados:"); 
 
 		int pontosFINAL[][] = new int[3][2];
 
@@ -247,7 +259,7 @@ public class App {
 			vEmpates[i] = 0;
 			totalPontos[i] = 0;
 		}
-		
+
 		nBatalha = 0;
 
 		switch (opcao) {
@@ -309,42 +321,46 @@ public class App {
 
 			}
 			break;
-		case 2: 
+		case 2:
 			System.out.println();
 			for (int i = 0; i < pontosFINAL.length; i++) {
-			for (int j = (i + 1); j < pontosFINAL[i].length + 1; j++) {
-				if (idEquipe[i] != idEquipe[j]) {
-					nBatalha++;
-					if (pontos[i][j - 1] == pontos[j][i]) {
-						if (notaDesign[i] > notaDesign[j]) {
-							empates[i]++;
-							vEmpates[i]++;
-							derrotas[j]++;
-							totalPontos[i] += 1;
-						} else {
-							empates[j]++;
-							vEmpates[j]++;
-							derrotas[i]++;
-							totalPontos[j] += 1;
+				for (int j = (i + 1); j < pontosFINAL[i].length + 1; j++) {
+					if (idEquipe[i] != idEquipe[j]) {
+						nBatalha++;
+						if (pontos[i][j - 1] == pontos[j][i]) {
+							if (notaDesign[i] > notaDesign[j]) {
+								empates[i]++;
+								vEmpates[i]++;
+								derrotas[j]++;
+								totalPontos[i] += 1;
+								totalPontosFase1[i] += 1;
+							} else {
+								empates[j]++;
+								vEmpates[j]++;
+								derrotas[i]++;
+								totalPontos[j] += 1;
+								totalPontosFase1[j] += 1;
 
-						}
-					} else {
-						if (pontosFINAL[i][j - 1] > pontosFINAL[j][i]) {
-							totalPontos[i] += 2;
-							vitorias[i]++;
-							derrotas[j]++;
+							}
 						} else {
-							totalPontos[j] += 2;
-							vitorias[j]++;
-							derrotas[i]++;
+							if (pontosFINAL[i][j - 1] > pontosFINAL[j][i]) {
+								totalPontos[i] += 2;
+								totalPontosFase1[i] += 2;
+								vitorias[i]++;
+								derrotas[j]++;
+							} else {
+								totalPontos[j] += 2;
+								totalPontosFase1[j] += 2;
+								vitorias[j]++;
+								derrotas[i]++;
+							}
 						}
 					}
 				}
-			}
 
-		}
-			for (int i = 0; i < vitorias.length; i++) {
-				System.out.print("Equipe " + (i + 1) + ": " + vitorias[i] + " vitórias, " + derrotas[i] + " derrotas");
+			}
+			for (int i = 0; i < 3; i++) {
+				System.out.print("Equipe " + idEquipe[i] + ": " + vitorias[i] + " vitórias, " + derrotas[i] + " derrotas");
 				if (empates[i] >= 1) {
 					if (empates[i] > 1) {
 						System.out.println(", " + empates[i] + " empates (" + vEmpates[i] + " vitórias).");
@@ -356,10 +372,40 @@ public class App {
 				}
 			}
 			break;
+		default:
+			System.out.println("Opção Inválida");
+			break;
 
 		}
-
 		
+		
+		
+		for (int i = 0; i < pontosFINAL.length; i++) {
+			for (int j = i + 1; j < pontosFINAL[i].length; j++) {
+				if (totalPontos[j] > totalPontos[i]) {
+					aux1 = totalPontos[j];
+					totalPontos[j] = totalPontos[i];
+					totalPontos[i] = aux1;
+
+					aux2 = idEquipe[j];
+					idEquipe[j] = idEquipe[i];
+					idEquipe[i] = aux2;
+
+					aux3 = notaDesign[j];
+					notaDesign[j] = notaDesign[i];
+					notaDesign[i] = aux3;
+				
+					}
+				}
+			}
+		
+		System.out.println();
+		for (int i = 0; i <1; i++) {
+			System.out.println("A equipe campeã é:");
+			System.out.println("Equipe " +idEquipe[i] +" com " +(totalPontos[i]+totalPontosFase1[i]) +" pontos (" +totalPontosFase1[i] +" pontos na primeira rodada, "  +totalPontos[i] +" na segunda rodada)");
+
+		}
+	
 
 		// gambiarra made by felipe
 	}
